@@ -1,8 +1,7 @@
 /* Updated fonts to my own choice of fonts*/
 body {
-  font-family: 'Caveat', cursive; 
   font-family: 'Satisfy', cursive;
-    font-size: 16px;
+  font-family: 'Sriracha', cursive;
   }
   
   textarea {
@@ -12,10 +11,20 @@ body {
     color: #000000b6;
     border-left: 1px solid black;
     padding: 10px;
+
+  }
+
+  .header {
+  text-align: center;
+  color: black;
+  border-radius: 0;
+  
+  
   }
   
   .description {
     white-space: pre-wrap;
+
   }
   /* updated to align text to center */
   .time-block {
@@ -37,17 +46,17 @@ body {
   
   /* Make it a prettier color */
   .past {
-    background-color: #d3d3d3;
+    background-color: #CCAD9F;
     color: white;
   }
   
   .present {
-    background-color: #AE5180;
+    background-color: #E9C0C2;
     color: white;
   }
   
   .future {
-    background-color: #51AE7F;
+    background-color: #308C79;
     color: white;
   }
   
