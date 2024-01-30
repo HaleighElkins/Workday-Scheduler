@@ -73,7 +73,6 @@ body {
     background-color: #3C5952;
     color: rgb(255, 244, 244);
 
-    /* Try to fix the save button to show the floppy disk */
   }
   
   .saveBtn i:hover {
