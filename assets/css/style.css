@@ -17,7 +17,7 @@ textarea {
   text-align: center;
   color: black;
   border-radius: 15px;
-  background-color: #e8e1df;
+  background-color: #AA8F87;
   white-space: pre-wrap;
   margin: 0;
   padding: 10px;
@@ -49,7 +49,7 @@ textarea {
 
 /* Made it a prettier color */
 .past {
-  background-color: #a89889;
+  background-color: #5F5E5A;
   color: black;
 }
 
@@ -59,7 +59,7 @@ textarea {
 }
 
 .future {
-  background-color: #9ca39c;
+  background-color: #A7B2AB;
   color: black;
 }
 
@@ -67,7 +67,7 @@ textarea {
   border-left: 1px solid rgb(0, 0, 0);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #51776e;
+  background-color: #ADAC98;
   color: rgb(255, 244, 244);
 }
 
