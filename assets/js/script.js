@@ -2,7 +2,7 @@
 // // Color change depending on time of day
 
 $(function colorChange() {
-
+    var now = new Date().getHours();
     // 9 am
     if (now > 9) {
         $("#9am").addClass("past");
@@ -79,25 +79,23 @@ $(function colorChange() {
     if (now > 17) {
         $("#5pm").addClass("past");
     } else if (now >= 17 && now < 18) {
-        $("#9am").addClass("present");
+        $("#5pm").addClass("present");
     } else if (now < 17) {
-        $("9am").addClass("future");
-        // check above and see if 9am does anything 
-    }
+        $("5pm").addClass("future");
 
+    }
 
     // 12 am
-    if (now > 24) {
-        $("#12am").addClass("past");
-    } else if (now >= 24 && now < 1) {
+    if (now >= 0 && now < 1) {
         $("#12am").addClass("present");
     } else if (now < 24) {
-        $("9am").addClass("future");
-        // check above and see if 9am does anything 
+        $("#12am").addClass("future");
     }
-})
+});
 
-// // Next functions will be for the save button working to save the input from user to local storage. 
+
+
+// // Next functions will be for the save button working to save the input from user to local storage. Including the date and time for the page. 
 
 
 // // Display today's day and date
@@ -105,6 +103,7 @@ var today = dayjs()
 $("#currentDay").text(today.format('dddd, MMM D, YYYY hh:mmA'));
 
 
+// Save button
 
 $(document).ready(function () {
     $(".saveBtn").on("click", function () {
@@ -117,15 +116,9 @@ $(document).ready(function () {
 
     // Get item from local storage if any
 
-    $("#hour-9 .description").val(localStorage.getItem("hour-9"));
-    $("#hour-10 .description").val(localStorage.getItem("hour-10"));
-    $("#hour-11 .description").val(localStorage.getItem("hour-11"));
-    $("#hour-12 .description").val(localStorage.getItem("hour-12"));
-    $("#hour-13 .description").val(localStorage.getItem("hour-13"));
-    $("#hour-14 .description").val(localStorage.getItem("hour-14"));
-    $("#hour-15 .description").val(localStorage.getItem("hour-15"));
-    $("#hour-16 .description").val(localStorage.getItem("hour-16"));
-    $("#hour-17 .description").val(localStorage.getItem("hour-17"));
+    for (var i = 9; i <= 17; i++) {
+        $("#hour-" + i + " .description").val(localStorage.getItem("hour-" + i));
+    }
     $("#hour-24 .description").val(localStorage.getItem("hour-24"));
 
     timeTracker();
