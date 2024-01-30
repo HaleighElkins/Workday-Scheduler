@@ -1,106 +1,101 @@
 /* Updated fonts to my own choice of fonts*/
 body {
-  font-family: 'Satisfy', cursive;
-  font-family: 'Sriracha', cursive;
-  }
-  
-  textarea {
-    background: transparent;
-    border: none;
-    resize: none;
-    color: #000000b6;
-    border-left: 1px solid black;
-    padding: 10px;
+  font-family: "Satisfy", cursive;
+  font-family: "Sriracha", cursive;
+}
 
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000b6;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+/* /* added a margin to remove gaps in between each row, and adjusted the padding  */
+.header {
+  text-align: center;
+  color: black;
+  border-radius: 15px;
+  background-color: #e8e1df;
+  white-space: pre-wrap;
+  margin: 0;
+  padding: 10px;
+}
 
-  }
-/*  added a margin to remove gaps in between each row, and adjusted the padding  */
-  .header {
-    text-align: center;
-    color: black;
-    border-radius: 15px;
-    background-color: #E8E1DF;
-    white-space: pre-wrap;
-    margin: 0; 
-    padding: 10px; 
-  }
- 
+*/ .description {
+  white-space: pre-wrap;
+}
+/* updated to align text to center */
+.time-block {
+  padding-bottom: 15px;
+  border-radius: 15px;
+  text-align: center;
+}
+/* /* updated prewrap and height, and fixed border issue around the hours input */
 
-  
-  .description {
-    white-space: pre-wrap;
+.row {
+  border-top: 1px solid #4b3a2a;
+  height: 100px;
+  display: flex;
+}
 
-  }
-  /* updated to align text to center */
-  .time-block {
-    padding-bottom: 15px;
-    border-radius: 15px;
-    text-align: center;
-  }
-  /* updated prewrap and height */
+.hour {
+  background-color: #e8e1df;
+  color: #000000;
+  border-top: 1px dashed #000000;
+  height: 118%;
+}
+
+/* Made it a prettier color */
+.past {
+  background-color: #a89889;
+  color: black;
+}
+
+.present {
+  background-color: #bc9cac;
+  color: black;
+}
+
+.future {
+  background-color: #9ca39c;
+  color: black;
+}
+
+.saveBtn {
+  border-left: 1px solid rgb(0, 0, 0);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #51776e;
+  color: rgb(255, 244, 244);
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Added media for smaller devices*/
+
+@media screen and (max-width: 760px), screen and (max-width: 575px) {
   .row {
-    border-top: 1px solid #4B3A2A;
-    height: 100px;
-    
+    height: auto;
+    margin-top: 20px;
   }
-  
+
   .hour {
-    background-color: #ffffff;
-    color: #000000;
-    border-top: 1px dashed #000000;
-    height: 100px;
+    padding-right: 15%;
   }
-  
-  /* Made it a prettier color */
-  .past {
-    background-color: #A89889;
-    color: black;
-  }
-  
-  .present {
-    background-color: #BC9CAC;
-    color: black;
-  }
-  
-  .future {
-    background-color: #9CA39C;
-    color: black;
-  }
-  
+
   .saveBtn {
-    border-left: 1px solid rgb(0, 0, 0);
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: #51776e;
-    color: rgb(255, 244, 244);
-
-  }
-  
-  .saveBtn i:hover {
-    font-size: 20px;
-    transition: all 0.3s ease-in-out;
+    border: 0;
+    border-radius: 0.25rem;
+    height: 50px;
   }
 
-  /* Added media for smaller devices*/
-  
-  @media screen and (max-width:760px), screen and (max-width:575px){
-    .row{
-      height: auto;
-      margin-top: 20px;
-    }
-
-    .hour{
-      padding-right: 15%;
-    }
-
-    .saveBtn{
-      border: 0;
-      border-radius: 0.25rem;
-      height: 50px;
-    }
-
-    textarea {
-      min-height: 85px;
-      border: 0;
-    }
+  textarea {
+    min-height: 85px;
+    border: 0;
   }
+}
