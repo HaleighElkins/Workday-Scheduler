@@ -1,28 +1,5 @@
-// I used window.onload to execute scripts that need to access the DOM when page is fully loaded. 
 
-// window.onload = function () {
-//     colorChange();
-//     nineAM();
-//     tenAM();
-//     elevenAM();
-//     twelveAM();
-//     onePM();
-//     twoPM();
-//     threePM();
-//     fourPM();
-//     fivePM();
-// }
-
-// What do the above do for me?
-
-// // Today's date
-
-var today = dayjs()
-$("#currentDay").text(today.format('dddd, MMM D, YYYY hh:mmA'));
-
-var now = new Date().getHours();
-
-// Color change depending on time of day
+// // Color change depending on time of day
 
 $(function colorChange() {
 
@@ -109,48 +86,47 @@ $(function colorChange() {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // 12 am
+    if (now > 24) {
+        $("#12am").addClass("past");
+    } else if (now >= 24 && now < 1) {
+        $("#12am").addClass("present");
+    } else if (now < 24) {
+        $("9am").addClass("future");
+        // check above and see if 9am does anything 
+    }
 })
 
+// // Next functions will be for the save button working to save the input from user to local storage. 
+
+
+// // Display today's day and date
+var today = dayjs()
+$("#currentDay").text(today.format('dddd, MMM D, YYYY hh:mmA'));
 
 
 
+$(document).ready(function () {
+    $(".saveBtn").on("click", function () {
+        var text = $(this).siblings(".description").val();
+        var time = $(this).parent().attr("id");
+        localStorage.setItem(time, text);
+    })
 
 
 
+    // Get item from local storage if any
 
+    $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+    $("#hour-10 .description").val(localStorage.getItem("hour-10"));
+    $("#hour-11 .description").val(localStorage.getItem("hour-11"));
+    $("#hour-12 .description").val(localStorage.getItem("hour-12"));
+    $("#hour-13 .description").val(localStorage.getItem("hour-13"));
+    $("#hour-14 .description").val(localStorage.getItem("hour-14"));
+    $("#hour-15 .description").val(localStorage.getItem("hour-15"));
+    $("#hour-16 .description").val(localStorage.getItem("hour-16"));
+    $("#hour-17 .description").val(localStorage.getItem("hour-17"));
+    $("#hour-24 .description").val(localStorage.getItem("hour-24"));
 
-
+    timeTracker();
+})
