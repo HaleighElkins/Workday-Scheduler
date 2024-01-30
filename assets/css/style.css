@@ -49,7 +49,7 @@ textarea {
 
 /* Made it a prettier color */
 .past {
-  background-color: #736066;
+  background-color: #6a575d;
   color: black;
 }
 
@@ -81,15 +81,17 @@ textarea {
 @media screen and (max-width: 760px), screen and (max-width: 575px) {
   .row {
     height: auto;
-    margin-top: 20px;
+    margin-top: 15px;
+   
   }
 
   .hour {
     padding-right: 15%;
+
   }
 
   .saveBtn {
-    border: 0;
+    border: 0px;
     border-radius: 0.25rem;
     height: 50px;
   }
@@ -97,5 +99,6 @@ textarea {
   textarea {
     min-height: 85px;
     border: 0;
+  
   }
 }
