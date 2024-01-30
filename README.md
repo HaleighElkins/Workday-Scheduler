@@ -28,7 +28,8 @@ THEN the saved events persist
 ## Deployment 
 <img width="1127" alt="Screenshot 2024-01-30 125845" src="https://github.com/HaleighElkins/Workday-Scheduler/assets/152942336/9e83190a-7e75-460c-a8e1-b299ca822cf3">
 
-Live URL:
+Live URL: https://haleighelkins.github.io/Workday-Scheduler/ 
+
 
 ## Credits
 
