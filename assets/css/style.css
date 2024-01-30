@@ -18,7 +18,7 @@ body {
   text-align: center;
   color: black;
   border-radius: 0;
-  
+
   
   }
   
@@ -28,35 +28,37 @@ body {
   }
   /* updated to align text to center */
   .time-block {
+    padding-bottom: 15px;
     border-radius: 15px;
     text-align: center;
   }
   /* updated prewrap and height */
   .row {
-    border-top: 1px solid white;
+    border-top: 1px solid #4B3A2A;
     height: 80px;
-    white-space: pre-wrap;
+    
   }
   
   .hour {
     background-color: #ffffff;
     color: #000000;
     border-top: 1px dashed #000000;
+    height: 80px;
   }
   
   /* Make it a prettier color */
   .past {
-    background-color: #CCAD9F;
+    background-color: #A89889;
     color: white;
   }
   
   .present {
-    background-color: #E9C0C2;
+    background-color: #BC9CAC;
     color: white;
   }
   
   .future {
-    background-color: #308C79;
+    background-color: #9CA39C;
     color: white;
   }
   
@@ -64,8 +66,8 @@ body {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: #06aed5;
-    color: white;
+    background-color: #3C5952;
+    color: rgb(0, 0, 0);
   }
   
   .saveBtn i:hover {
