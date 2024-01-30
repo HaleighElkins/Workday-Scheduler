@@ -102,6 +102,14 @@ $(function colorChange() {
 var today = dayjs()
 $("#currentDay").text(today.format('dddd, MMM D, YYYY hh:mmA'));
 
+// This will have the time update while the user is still on the page
+function updateDateTime() {
+    var today = dayjs()
+    $("#currentDay").text(today.format('dddd, MMM D, YYYY hh:mmA'));
+}
+// Set to update every 30 seconds since 60 seconds is too late
+setInterval(updateDateTime, 30000);
+updateDateTime();
 
 // Save button
 
@@ -114,7 +122,7 @@ $(document).ready(function () {
 
 
 
-    // Get item from local storage if any
+    // Get item from local storage if any for input
 
     for (var i = 9; i <= 17; i++) {
         $("#hour-" + i + " .description").val(localStorage.getItem("hour-" + i));
