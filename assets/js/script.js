@@ -9,7 +9,7 @@ $(function colorChange() {
     } else if (now >= 9 && now < 10) {
         $("#9am").addClass("present");
     } else if (now < 9) {
-        $("9am").addClass("future");
+        $("#9am").addClass("future");
     }
 
     // 10am
@@ -18,7 +18,7 @@ $(function colorChange() {
     } else if (now >= 10 && now < 11) {
         $("#10am").addClass("present");
     } else if (now < 10) {
-        $("10am").addClass("future");
+        $("#10am").addClass("future");
     }
 
     // 11am
@@ -27,7 +27,7 @@ $(function colorChange() {
     } else if (now >= 11 && now < 12) {
         $("#11am").addClass("present");
     } else if (now < 11) {
-        $("11am").addClass("future");
+        $("#11am").addClass("future");
     }
 
     // 12pm
@@ -36,16 +36,16 @@ $(function colorChange() {
     } else if (now >= 12 && now < 13) {
         $("#12pm").addClass("present");
     } else if (now < 12) {
-        $("12pm").addClass("future");
+        $("#12pm").addClass("future");
     }
 
     // 1pm
     if (now > 13) {
-        $("1pm").addClass("past");
+        $("#1pm").addClass("past");
     } else if (now >= 13 && now < 14) {
         $("#1pm").addClass("present");
     } else if (now < 13) {
-        $("1pm").addClass("future");
+        $("#1pm").addClass("future");
     }
 
     // 2pm
@@ -54,7 +54,7 @@ $(function colorChange() {
     } else if (now >= 14 && now < 15) {
         $("#2pm").addClass("present");
     } else if (now < 14) {
-        $("2pm").addClass("future");
+        $("#2pm").addClass("future");
     }
 
     // 3pm
@@ -63,7 +63,7 @@ $(function colorChange() {
     } else if (now >= 15 && now < 16) {
         $("#3pm").addClass("present");
     } else if (now < 15) {
-        $("3pm").addClass("future");
+        $("#3pm").addClass("future");
     }
 
     // 4pm
@@ -72,7 +72,7 @@ $(function colorChange() {
     } else if (now >= 16 && now < 17) {
         $("#4pm").addClass("present");
     } else if (now < 16) {
-        $("4pm").addClass("future");
+        $("#4pm").addClass("future");
     }
 
     // 5pm 
@@ -81,19 +81,9 @@ $(function colorChange() {
     } else if (now >= 17 && now < 18) {
         $("#5pm").addClass("present");
     } else if (now < 17) {
-        $("5pm").addClass("future");
+        $("#5pm").addClass("future");
 
     }
-
-    // 12 am
-    if (now >= 0 && now < 1) {
-        $("#12am").addClass("present");
-    } else if (now < 24) {
-        $("#12am").addClass("future");
-    }
-});
-
-
 
 // // Next functions will be for the save button working to save the input from user to local storage. Including the date and time for the page. 
 
@@ -128,6 +118,6 @@ $(document).ready(function () {
         $("#hour-" + i + " .description").val(localStorage.getItem("hour-" + i));
     }
     $("#hour-24 .description").val(localStorage.getItem("hour-24"));
+})
 
-    timeTracker();
 })
