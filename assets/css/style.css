@@ -15,9 +15,9 @@ textarea {
 /* /* added a margin to remove gaps in between each row, and adjusted the padding  */
 .header {
   text-align: center;
-  color: black;
+  color: #cab89d;
   border-radius: 15px;
-  background-color: #AA8F87;
+  background-color: #322C24;
   white-space: pre-wrap;
   margin: 0;
   padding: 10px;
@@ -49,17 +49,17 @@ textarea {
 
 /* Made it a prettier color */
 .past {
-  background-color: #6a575d;
-  color: black;
+  background-color: #534635;
+  color: rgb(30, 27, 27);
 }
 
 .present {
-  background-color: #7A9BA6;
+  background-color: #75717C;
   color: black;
 }
 
 .future {
-  background-color: #CFB8A4;
+  background-color: #BA9075;
   color: black;
 }
 
@@ -67,7 +67,7 @@ textarea {
   border-left: 1px solid rgb(0, 0, 0);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #ADAC98;
+  background-color: #828d6d;
   color: rgb(255, 244, 244);
 }
 
